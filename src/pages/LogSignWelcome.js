@@ -9,7 +9,6 @@ const LogSignWelcome = () => {
                 <Auth />
             </Full>
     </>
-
     )
 }
 
