@@ -1,7 +1,6 @@
 import LogSignWelcome from "./pages/LogSignWelcome";
 import GlobalStyle from "./components/GlobalStyle";
 
-
 const App = ()  =>{
 
   return (
