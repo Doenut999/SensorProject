@@ -1,7 +1,14 @@
+import LogSignWelcome from "./pages/LogSignWelcome";
+import GlobalStyle from "./components/GlobalStyle";
+
+
 const App = ()  =>{
+
   return (
     <div className="App">
-      <h1>Root Component</h1>
+        <GlobalStyle />
+      <LogSignWelcome />
+
     </div>
   );
 }
