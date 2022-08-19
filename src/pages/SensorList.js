@@ -1,4 +1,4 @@
-import FuelPressureSensor from '../assets/FuelPressureSensor.jpg'
+// import FuelPressureSensor from '../assets/FPS.jpg'
 import CoolantLevelSensor from "../assets/CoolantLevelSensor.jpg"
 import NoxSensor from "../assets/NoxSensor.jpg"
 import OilPressureSensor from "../assets/OilPressureSensor.jpg"
@@ -22,7 +22,7 @@ const SensorList = () => {
             <Header>Types of Automobile Sensors</Header>
             <Sensor className="sensor">
                 <Info>
-                    <img src={FuelPressureSensor} alt="fuel pressure sensor"/>
+                    {/*<img src={FuelPressureSensor} alt="fuel pressure sensor"/>*/}
                     <span>Fuel Pressure Sensor</span>
                 </Info>
                 <Details className="sensor-info">
