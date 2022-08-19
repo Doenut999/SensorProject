@@ -1,4 +1,4 @@
-import FuelPressureSensor from "../assets/FuelPressureSensor.jpg"
+import FuelPressureSensor from '../assets/FuelPressureSensor.jpg'
 import CoolantLevelSensor from "../assets/CoolantLevelSensor.jpg"
 import NoxSensor from "../assets/NoxSensor.jpg"
 import OilPressureSensor from "../assets/OilPressureSensor.jpg"

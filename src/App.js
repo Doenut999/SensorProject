@@ -6,14 +6,15 @@ import {Route, Routes} from "react-router-dom";
 const App = ()  =>{
 
   return (
-    <div className="App">
+    <>
         <GlobalStyle />
-      <LogSignWelcome />
-        <SensorList />
+      {/*<LogSignWelcome />*/}
+      {/*  <SensorList />*/}
         <Routes>
-            <Route to="/list" element={<SensorList />} />
+            <Route path="/" element={<LogSignWelcome />}/>
+            <Route path="list" element={<SensorList />} />
         </Routes>
-    </div>
+    </>
   );
 }
 
