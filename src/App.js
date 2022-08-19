@@ -11,7 +11,7 @@ const App = ()  =>{
       <LogSignWelcome />
         <SensorList />
         <Routes>
-            <Route to="/list" element={<SensorList />}/>
+            <Route to="/list" element={<SensorList />} />
         </Routes>
     </div>
   );
