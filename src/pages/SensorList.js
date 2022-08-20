@@ -1,28 +1,12 @@
-// import FuelPressureSensor from '../assets/FPS.jpg'
-import CoolantLevelSensor from "../assets/CoolantLevelSensor.jpg"
-import NoxSensor from "../assets/NoxSensor.jpg"
-import OilPressureSensor from "../assets/OilPressureSensor.jpg"
-import OilLevelSensor from "../assets/OilLevelSensor.webp"
-import ManifoldAbsolutePressureSensor from "../assets/ManifoldAbsolutePressureSensor.webp"
-import MassAirflowSensor from "../assets/MassAirflowSensor.webp"
-import KnockSensor from "../assets/KnockSensor.webp"
-import OxygenSensor from "../assets/OxygenSensor.jpg"
-import BoostPressureSensor from "../assets/BoostPressureSensor.jpg"
-import CrankshaftPositionSensor from "../assets/CrankshaftPositionSensor.jpg"
-import CoolantTempSensor from "../assets/CoolantTempSensor.jpg"
-import ThrottlePositionSensor from "../assets/ThrottlePositionSensor.jpg"
-import ExhaustTemperatureSensor from "../assets/ExhaustTemperatureSensor.jpg"
-import EngineOilLevelSensor from "../assets/EngineOilLevelSensor.jpg"
 import styled from "styled-components";
 const SensorList = () => {
 
     return (
-
         <>
             <Header>Types of Automobile Sensors</Header>
             <Sensor className="sensor">
                 <Info>
-                    {/*<img src={FuelPressureSensor} alt="fuel pressure sensor"/>*/}
+                    <img src={"https://tester-101.s3.amazonaws.com/assets/FPS.jpg"} alt="fuel pressure sensor"/>
                     <span>Fuel Pressure Sensor</span>
                 </Info>
                 <Details className="sensor-info">
@@ -31,7 +15,7 @@ const SensorList = () => {
             </Sensor>
             <Sensor className="sensor">
                 <Info className="sensor-img">
-                    <img src={CoolantLevelSensor} alt="coolant-level-sensor"/>
+                    <img src={"https://tester-101.s3.amazonaws.com/assets/CoolantLevelSensor.jpg"} alt="coolant-level-sensor"/>
                     <span>Coolant Level Sensor</span>
                 </Info>
                 <Details className="sensor-text">
@@ -40,7 +24,7 @@ const SensorList = () => {
             </Sensor>
             <Sensor className="sensor">
                 <Info className="sensor-img">
-                    <img src={NoxSensor} alt="nox sensor"/>
+                    <img src={"https://tester-101.s3.amazonaws.com/assets/NoxSensor.jpg"} alt="nox sensor"/>
                     <span>Nox Sensor</span>
                 </Info>
                 <Details className="sensor-text">
@@ -49,14 +33,14 @@ const SensorList = () => {
             </Sensor>
             <Sensor className="sensor">
                 <Info className="sensor-img">
-                    <img src={OilLevelSensor} alt="oil level sensor"/>
+                    <img src={"https://tester-101.s3.amazonaws.com/assets/OilLevelSensor.webp"} alt="oil level sensor"/>
                     <span>Oil Level Sensor</span>
                 </Info>
                 <Details className="sensor-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto debitis laudantium saepe unde vitae voluptas!</Details>
             </Sensor>
             <Sensor className="sensor">
                 <Info className="sensor-img">
-                    <img src={OilPressureSensor} alt=""/>
+                    <img src={"https://tester-101.s3.amazonaws.com/assets/OilPressureSensor.jpg"} alt=""/>
                     <span>Oil Pressure Sensor</span>
                 </Info>
                 <Details className="sensor-text">
@@ -65,7 +49,7 @@ const SensorList = () => {
             </Sensor>
             <Sensor className="sensor">
                 <Info className="sensor-img">
-                    <img src={OxygenSensor} alt=""/>
+                    <img src={"https://tester-101.s3.amazonaws.com/assets/OxygenSensor.jpg"} alt=""/>
                     <span>Oxygen Sensor</span>
                 </Info>
                 <Details className="sensor-text">
@@ -74,7 +58,7 @@ const SensorList = () => {
             </Sensor>
             <Sensor className="sensor">
                 <Info className="sensor-img">
-                    <img src={CoolantTempSensor} alt="coolant temperature sensor"/>
+                    <img src={"https://tester-101.s3.amazonaws.com/assets/CoolantTempSensor.jpg"} alt="coolant temperature sensor"/>
                     <span>Coolant Temperature Sensor</span>
                 </Info>
                 <Details className="sensor-text">
@@ -83,7 +67,7 @@ const SensorList = () => {
             </Sensor>
             <Sensor className="sensor">
                 <Info className="sensor-img">
-                    <img src={KnockSensor} alt="knock sensor"/>
+                    <img src={"https://tester-101.s3.amazonaws.com/assets/KnockSensor.webp"} alt="knock sensor"/>
                     <span>Knock Sensor</span>
                 </Info>
                 <Details className="sensor-text">
@@ -92,7 +76,7 @@ const SensorList = () => {
             </Sensor>
             <Sensor className="sensor">
                 <Info className="sensor-img">
-                    <img src={CrankshaftPositionSensor} alt="crankshaft position sensor"/>
+                    <img src={"https://tester-101.s3.amazonaws.com/assets/CrankshaftPositionSensor.jpg"} alt="crankshaft position sensor"/>
                     <span>Crankshaft Position Sensor</span>
                 </Info>
                 <Details className="sensor-text">
@@ -101,7 +85,7 @@ const SensorList = () => {
             </Sensor>
             <Sensor className="sensor">
                 <Info className="sensor-img">
-                    <img src={BoostPressureSensor} alt="boost pressure sensor"/>
+                    <img src={"https://tester-101.s3.amazonaws.com/assets/BoostPressureSensor.jpg"} alt="boost pressure sensor"/>
                     <span>Boost Pressure Sensor</span>
                 </Info>
                 <Details className="sensor-text">
@@ -110,7 +94,7 @@ const SensorList = () => {
             </Sensor>
             <Sensor className="sensor">
                 <Info className="sensor-img">
-                    <img src={ThrottlePositionSensor} alt="throttle sensor"/>
+                    <img src={"https://tester-101.s3.amazonaws.com/assets/ThrottlePositionSensor.jpg"} alt="throttle sensor"/>
                     <span>Throttle Position Sensor</span>
                 </Info>
                 <Details className="sensor-text">
@@ -119,7 +103,7 @@ const SensorList = () => {
             </Sensor>
             <Sensor className="sensor">
                 <Info className="sensor-img">
-                    <img src={ManifoldAbsolutePressureSensor} alt="manifold absolute pressure sensor"/>
+                    <img src={"https://tester-101.s3.amazonaws.com/assets/ManifoldAbsolutePressureSensor.webp"} alt="manifold absolute pressure sensor"/>
                     <span>Absolute Pressure Sensor</span>
                 </Info>
                 <Details className="sensor-text">
@@ -128,7 +112,7 @@ const SensorList = () => {
             </Sensor>
             <Sensor className="sensor">
                 <Info className="sensor-img">
-                    <img src={MassAirflowSensor} alt="mass airflow sensor" />
+                    <img src={"https://tester-101.s3.amazonaws.com/assets/MassAirflowSensor.webp"} alt="mass airflow sensor" />
                     <span>Mass Airflow Sensor</span>
                 </Info>
                 <Details className="sensor-text">
@@ -137,7 +121,7 @@ const SensorList = () => {
             </Sensor>
             <Sensor className="sensor">
                 <Info className="sensor-img">
-                    <img src={ExhaustTemperatureSensor} alt="exhaust temperatre sensor"/>
+                    <img src="https://tester-101.s3.amazonaws.com/assets/ExhaustTemperatureSensor.jpg" alt="exhaust temperature sensor"/>
                     <span>Exhaust Temperature Sensor</span>
                 </Info>
                 <Details className="sensor-text">
@@ -146,7 +130,7 @@ const SensorList = () => {
             </Sensor>
             <Sensor>
                 <Info className="sensor-img">
-                    <img src={EngineOilLevelSensor} alt="exhaust temperature sensor" />
+                    <img src={"https://tester-101.s3.amazonaws.com/assets/EngineOilLevelSensor.jpg"} alt="exhaust temperature sensor" />
                     <span>Engine Oil Level Senor</span>
                 </Info>
                 <Details>
@@ -171,8 +155,8 @@ const Sensor = styled.div`
   margin: 5vh 15vw;
   & img {
       float: left;
-      width:  150px;
-      height: 150px;
+      width:  200px;
+      height: 200px;
       object-fit: cover;
   }
 `
