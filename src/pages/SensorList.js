@@ -176,6 +176,8 @@ const Sensor = styled.div`
      & img {
        width: 100px;
        height: 100px;
+       margin: 5vh 5vw;
+
      }
   }
 `
