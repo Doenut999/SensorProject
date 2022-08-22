@@ -284,6 +284,7 @@ const Form = styled.div`
   @media (max-width: 500px) {
     & label {
       width: 130px;
+      margin-right: 5vw;
     } 
     
     
