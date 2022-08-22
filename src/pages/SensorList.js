@@ -170,6 +170,15 @@ const Sensor = styled.div`
       height: 200px;
       object-fit: cover;
   }
+  @media (max-width: 1024px) {
+    flex-direction: column;
+     & img {
+       width: 150px;
+       height: 150px;
+     }
+  }
+  
+
 `
 const Details = styled.div`
   width: 60vw;
@@ -179,6 +188,8 @@ const Details = styled.div`
   border: 1px solid cornflowerblue;
   margin-left: 5vw;
   padding: 13px;
+
+
 `
 
 const Header = styled.header`
