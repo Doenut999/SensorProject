@@ -283,7 +283,7 @@ const Form = styled.div`
   }
   @media (max-width: 500px) {
     & label {
-      width: 220px;
+      width: 170px;
     } 
     
     
