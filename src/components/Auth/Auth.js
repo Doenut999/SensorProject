@@ -222,6 +222,7 @@ const Form = styled.div`
       align-items: center;
     }
   & input {
+    width: 70%;
     border: 1px solid transparent;
     border-radius: 8px;
     padding: 5px;
