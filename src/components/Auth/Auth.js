@@ -150,27 +150,27 @@ const Auth = () => {
                                 <div className="inputs">
                                     <label htmlFor="name-input">
                                         Name
-                                        <input type="text" placeholder="name" name="name-input"/>
+                                        <input className="g-input" type="text" placeholder="name" name="name-input"/>
                                     </label>
                                     <label htmlFor="email-input">
                                         Email
-                                        <input type="text" placeholder="email" name="email-input"/>
+                                        <input className="g-input" type="text" placeholder="email" name="email-input"/>
                                     </label>
                                     <label htmlFor="password-input">
                                         Password
-                                        <input type="text" placeholder="password" name="password-input"/>
+                                        <input className="g-input" type="text" placeholder="password" name="password-input"/>
                                     </label>
                                     <label htmlFor="repeat-password-input">
                                         Repeat Password
-                                        <input type="text" placeholder="repeat password" name="repeat-password-input"/>
+                                        <input className="g-input" type="text" placeholder="repeat password" name="repeat-password-input"/>
                                     </label>
                                 </div>
                             </div>
                         :
                             <div className="input-wrapper">
                                 <div className="input-logged">
-                                    <label htmlFor="email-input2">Email <input type="text" placeholder="email" name="email-input2"/></label>
-                                    <label htmlFor="password-input2">Password<input type="text" placeholder="password" name="password-input2"/></label>
+                                    <label htmlFor="email-input2">Email <input className="b-input" type="text" placeholder="email" name="email-input2"/></label>
+                                    <label htmlFor="password-input2">Password<input className="b-input" type="text" placeholder="password" name="password-input2"/></label>
                                 </div>
                             </div>
                     }
@@ -221,6 +221,10 @@ const Form = styled.div`
       justify-content: space-between;
       align-items: center;
     }
+  
+  & .g-input {
+      background-color: greenyellow;
+  }
   & input {
     border: 1px solid transparent;
     border-radius: 8px;
@@ -242,7 +246,6 @@ const Form = styled.div`
     width: 60%;
     height: 60%;
     display: flex;
-    border: 2px dotted seagreen;
     justify-content: center;
     align-items: center;
     padding: 10px;
@@ -258,22 +261,25 @@ const Form = styled.div`
    } 
   
   @media (max-width: 1024px) {
-  display: flex;
+    display: flex;
+    flex-direction: column;
     min-width: 350px;
+    & .g-input {
+      background-color: greenyellow;
+      min-width: 300px;
+    }
     
     & .input-wrapper {
       padding: 0;
       margin: 0;
-      height: 100%;
-      width: 50%;
+      height: 80%;
+      width: 100%;
     }
     
     & .switcher {
-      height: 100%;
-      width: 35%;
+      height: 20%;
+      width: 100%;
       display: flex;
-      border: 2px dotted seagreen;
-      flex-direction: column;
       justify-content: space-around;
       align-items: center;
     }
@@ -285,8 +291,12 @@ const Form = styled.div`
   @media (max-width: 500px) {
     &  input {
       width: 45vw;
+      scale: 0.8;
       //margin-right: 5vw;
     }
+    & label {
+      margin: 20px 5px;
+    } 
   }
 `
 
@@ -312,6 +322,7 @@ const Card = styled.div`
   border-radius: 30px;
   @media (max-width: 1024px) {
     flex-direction: column;
+    height: 80vh;
   }
 `
 
@@ -325,7 +336,7 @@ const Left = styled.section`
   align-items: center;
   @media (max-width: 1024px) {
     width: 100%;
-    height: 50%;
+    height: 25%;
   }
 `
 const Right = styled.section`
@@ -336,7 +347,7 @@ const Right = styled.section`
   border-radius: 30px;
   @media (max-width: 1024px) {
     width: 100%;
-    height: 50%;
+    height: 75%;
   }
 
 `

@@ -1,10 +1,12 @@
-const Heather = () => {
-    
+/* eslint-disable */
+import { useEffect } from "react";
+// import { ReactComponent as Svg } from './Spinner2.svg';
+export default function Heather(){
+    useEffect(() => {
+    },[])
     return (
-        <>
-            <img src="../../main.svg" alt="yes"/>
-        </>
+        // <Svg/>
+        <></>
     )
 }
 
-export default Heather
