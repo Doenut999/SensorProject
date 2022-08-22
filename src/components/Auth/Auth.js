@@ -282,7 +282,7 @@ const Form = styled.div`
     
   }
   @media (max-width: 500px) {
-    width: 320px;
+    width: 220px;
   }
 
 `
