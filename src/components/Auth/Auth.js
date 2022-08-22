@@ -222,7 +222,6 @@ const Form = styled.div`
       align-items: center;
     }
   & input {
-    resize: vertical;
     border: 1px solid transparent;
     border-radius: 8px;
     padding: 5px;
@@ -283,7 +282,7 @@ const Form = styled.div`
     
   }
   @media (max-width: 500px) {
-    width: 35%;
+    width: 320px;
   }
 
 `
