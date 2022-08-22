@@ -283,13 +283,10 @@ const Form = styled.div`
   }
   @media (max-width: 500px) {
     & label {
-      width: 130px;
+      width: 100px;
       margin-right: 5vw;
-    } 
-    
-    
+    }
   }
-
 `
 
 const IntentButton = styled.button`
