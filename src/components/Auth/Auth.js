@@ -282,8 +282,8 @@ const Form = styled.div`
     
   }
   @media (max-width: 600px) {
-    & input {
-      scale: 0.7;
+    & label{
+      scale: 0.2;
     }
   }
 `
