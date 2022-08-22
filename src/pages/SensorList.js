@@ -177,9 +177,8 @@ const Sensor = styled.div`
        height: 100px;
      }
   }
-  
-
 `
+
 const Details = styled.div`
   width: 60vw;
   min-width: 160px;
@@ -197,6 +196,9 @@ const Header = styled.header`
   font-weight: bolder;
   font-size: 3rem;
   text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
   text-decoration: underline;
 `
 const Info = styled.div`
