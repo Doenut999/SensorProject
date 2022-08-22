@@ -223,7 +223,6 @@ const Form = styled.div`
     }
   
   & .g-input {
-      background-color: greenyellow;
   }
   & input {
     border: 1px solid transparent;
@@ -265,8 +264,8 @@ const Form = styled.div`
     flex-direction: column;
     min-width: 350px;
     & .g-input {
-      background-color: greenyellow;
       min-width: 300px;
+      margin-right: 3vw;
     }
     
     & .input-wrapper {
