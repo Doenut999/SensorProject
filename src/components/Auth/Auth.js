@@ -242,6 +242,7 @@ const Form = styled.div`
     width: 60%;
     height: 60%;
     display: flex;
+    border: 2px dotted seagreen;
     justify-content: center;
     align-items: center;
     padding: 10px;
@@ -269,21 +270,21 @@ const Form = styled.div`
     
     & .switcher {
       height: 100%;
-      width: 50%;
+      width: 35%;
       display: flex;
-      margin-left: 20px;
+      border: 2px dotted seagreen;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
     }
     & button {
-      scale: 0.7;
+      scale: 0.8;
     }
     
   }
   @media (max-width: 500px) {
     &  input {
-      width: 70%;
+      width: 45vw;
       //margin-right: 5vw;
     }
   }
