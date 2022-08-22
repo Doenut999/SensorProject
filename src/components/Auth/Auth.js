@@ -271,7 +271,7 @@ const Form = styled.div`
       height: 100%;
       width: 50%;
       display: flex;
-      border: 2px dotted seagreen;
+      margin-left: 20px;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
