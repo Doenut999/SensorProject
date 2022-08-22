@@ -14,7 +14,7 @@ const SensorList = () => {
     return (
         <>
             <Header>Types of Automobile Sensors</Header>
-            <Sensor className="sensor" as={motion.section} initial={initial} whileInView={inView}  viewport={{once: false, amount: 0.45}}>
+            <Sensor className="sensor" as={motion.section} initial={initial} whileInView={inView}  viewport={{once: false, amount: 0.45}} style={{marginTop: "11vh"}}>
                 <Info>
                     <img src={"https://tester-101.s3.amazonaws.com/assets/FPS.jpg"} alt="fuel pressure sensor"/>
                     <span>Fuel Pressure Sensor</span>
@@ -152,6 +152,7 @@ const SensorList = () => {
 }
 
 const Sensor = styled.div`
+  
   width: 70vw;
   height: 20vh;
   min-height: 350px;
@@ -191,15 +192,22 @@ const Details = styled.div`
 
 `
 
-const Header = styled.header`
+const Header = styled.nav`
   color: white;
   font-weight: bolder;
   font-size: 3rem;
+  width: 100%;
+  height: 10vh;
+  background-color: black;
   text-align: center;
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 30;
   text-decoration: underline;
+  @media (max-width: 500px){
+    font-size: 2rem;
+  }
 `
 const Info = styled.div`
   display: flex;
