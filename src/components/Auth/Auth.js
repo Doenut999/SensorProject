@@ -282,6 +282,9 @@ const Form = styled.div`
     }
     
   }
+  @media (max-width: 500px) {
+    width: 35%;
+  }
 
 `
 
