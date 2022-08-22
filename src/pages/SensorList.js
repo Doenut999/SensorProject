@@ -188,10 +188,13 @@ const Details = styled.div`
   height: 55%;
   border-radius: 20px;
   border: 1px solid cornflowerblue;
-  margin-left: 5vw;
+  margin-top: 3vh;
   padding: 13px;
+  @media (max-width: 600px){
+    width: 70vw;
+    min-width: unset;
 
-
+  }
 `
 
 const Header = styled.nav`
