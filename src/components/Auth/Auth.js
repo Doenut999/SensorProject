@@ -276,16 +276,12 @@ const Form = styled.div`
       justify-content: space-around;
       align-items: center;
     }
-    & label, button {
+    & button {
       scale: 0.7;
     }
     
   }
-  @media (max-width: 600px) {
-    & label{
-      scale: 0.2;
-    }
-  }
+
 `
 
 const IntentButton = styled.button`
