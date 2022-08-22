@@ -175,7 +175,7 @@ const Auth = () => {
                             </div>
                     }
                     <div className="switcher">
-                        <Complete onClick={()=> setLogged(prevState => !prevState)}>{logged ? <h2>Create My Account</h2> : <h2>Log In</h2>}</Complete>
+                        <Complete onClick={()=> {}}>{logged ? <h2>Create My Account</h2> : <h2>Log In</h2>}</Complete>
                         <IntentButton onClick={()=> setLogged(prevState => !prevState)}>{logged ? <h2>I have An Account</h2> : <h2>New Account</h2>}</IntentButton>
                     </div>
                 </Form>
@@ -252,7 +252,7 @@ const Form = styled.div`
      height: 20%;
      display: flex;
      padding: 30px;
-     justify-content: space-between;
+     justify-content: space-evenly;
      align-items: center;
    } 
   
