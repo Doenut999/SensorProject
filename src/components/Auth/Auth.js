@@ -282,9 +282,9 @@ const Form = styled.div`
     
   }
   @media (max-width: 500px) {
-    & label {
-      width: 100px;
-      margin-right: 5vw;
+    &  input {
+      width: 70%;
+      //margin-right: 5vw;
     }
   }
 `
