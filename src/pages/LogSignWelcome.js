@@ -1,5 +1,5 @@
 import NavBar from "../components/Nav/NavBar";
-import Auth from "../components/Auth/Auth";
+import Auth from "../components/Auth";
 import styled from "styled-components";
 
 const LogSignWelcome = () => {

@@ -11,14 +11,16 @@ const AboutPage = () => {
                 Sensor Project
             </AboutNav>
             <HeadSection>
-                <div>
+                <div style={{minWidth: 300}}>
                     <Logo as={motion.h1} initial={{y: 200, opacity: 0}} animate={{y:0, opacity: 1}} transition={{type: "spring", stiffness: 50}}>Automobile Sensor Project</Logo>
                     <motion.span  initial={{y: 200, opacity: 0}} animate={{y:0, opacity: 1}} transition={{type: "spring", stiffness: 50, delay: 0.3}}>Create An Account to see our work</motion.span>
                     <Link to="auth"><Create>Create Account</Create></Link>
                 </div>
-                <div className="right">
-                    <Heather />
-                </div>
+                <motion.div className="right"
+                            // style={{border: "3px solid greenyellow"}}
+                            initial={{x: "200vw"}} animate={{x:0}} transition={{duration: 1.9, delay: 0.2, type: "spring", stiffness: 40}}>
+                    <Heather  />
+                </motion.div>
 
             </HeadSection>
             <MidSection>
@@ -64,6 +66,9 @@ const Logo = styled.h1`
   color: white;
   font-size: 2rem;
   text-decoration: underline;
+  @media (max-width: 900px) {
+    font-size: 1rem;
+  }
 `
 
 const Left = styled.div`
@@ -90,13 +95,14 @@ const RButton = styled.button`
   transition: all 0.5s ease-in;
 `
 
-const Mid = styled.h3`
+const Mid = styled.span`
   font-size: 1.5rem;
 `
 
 const AboutNav = styled.nav`
   height: 10vh;
   color: white;
+  border-bottom: 2px solid white;
   font-size: 4rem;
   display: flex;
   justify-content: center;
@@ -111,10 +117,14 @@ const AboutNav = styled.nav`
   }
 `
 const HeadSection = styled.section`
-  padding: 10vh 10vw;
+  padding: 5vh 5vw;
   width: 100%;
   height: 90vh;
   background-color: black;
+  display: flex;
+  //border: 2px dotted seagreen;
+  justify-content: space-evenly;
+  align-items: center;
   & div {
     margin: 5vh 0;
     height: 50%;
@@ -122,6 +132,9 @@ const HeadSection = styled.section`
     //
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
+  }
+  @media (max-width: 1024px) {
     flex-direction: column;
   }
 `
@@ -158,7 +171,7 @@ const Create = styled.button`
 `
 const MidSection = styled.section`
     height: 100vh;
-  padding: 10vh 10vw;
+  display: flex;
     width: 100%;
     background-color: white;
     color: blue;
@@ -174,9 +187,10 @@ const BottomSection = styled.section`
     
 `
 
-const MidSectionHead = styled.h2`
+const MidSectionHead = styled.span`
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 1rem;
+  display: inline-block;
   text-decoration: underline dotted;
   text-decoration-thickness: 5px;
 `
