@@ -23,17 +23,25 @@ const AboutPage = () => {
                 </motion.div>
 
             </HeadSection>
+            <InfoSection>
+                <h1>this is the fucking info section</h1>
+
+            </InfoSection>
             <MidSection>
                 <Left>
                     <MidSectionHead>Who We Are</MidSectionHead>
-                    <span>
-                    We are a group of Automobile Engineering students, Level 400. Our work has been on
-                    <span title="Engine sensors in a vehicle are incorporated to provide the correct amount of fuel for all operating conditions" style={{textDecoration: "underline wavy"}}> Automobile Engine Sensors</span>.
-                </span>
-                    <Mid>We have curated 15 of the most useful and widely-known sensors and created this website to showcase our work, as part of our final Project</Mid>
-                    <p>We'd like for you to come take a look</p>
-                    <Join>Join Us</Join>
+
+                {/*    //TODO: in this section add, the vision, the mission and the team*/}
+
+                    <MidSectionHead>Vision</MidSectionHead>
+                    <h3>For as many roadside mechanics to be able to identify sensors on sight and identify the possible faults and be able to diagnose problems with each</h3>
                 </Left>
+                <Right>
+                    <RightSectionHead>
+                        <MidSectionHead>Mission</MidSectionHead>
+                        <h3>To educate roadside mechanics on the car engine sensors they use in everyday work, in terms of their proper name, uses, location and diagnosis</h3>
+                    </RightSectionHead>
+                </Right>
             </MidSection>
             <Ready>
                 Are you Ready now?
@@ -45,6 +53,14 @@ const AboutPage = () => {
         </>
     )
 }
+
+const Right = styled.div`
+    width: 50%;
+    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
 
 const Ready = styled.div`
   width: 75vw;
@@ -139,22 +155,7 @@ const HeadSection = styled.section`
   }
 `
 
-const Join = styled.span`
-  width: 40%;
-  text-align: center;
-  display: inline;
-  font-size: 3rem;
-  padding: 5px;
-  border: 1px solid transparent;
-  border-radius: 15px;
-  text-decoration: underline dotted 1px;
-  //&:hover {
-  //  transform: scale(1.15);
-  //  transform-origin: left;
-  //  text-decoration-thickness: 3px;
-  //}
-  transition: all 1s ease-in;
-`
+
 
 const Create = styled.button`
   background-color: #00A6ED;
@@ -170,11 +171,11 @@ const Create = styled.button`
   transition: all 0.4s ease-in;
 `
 const MidSection = styled.section`
-    height: 100vh;
+    height: 110vh;
   display: flex;
     width: 100%;
-    background-color: white;
-    color: blue;
+    background-image: linear-gradient(white,rgba(245, 255, 145, 0.8));
+    color: purple;
 
 `
 
@@ -182,16 +183,37 @@ const BottomSection = styled.section`
   height: 25vh;
   padding: 10vh 10vw;
   width: 100%;
-  background-color: rgba(245, 255, 145, 0.8);
+  background-image: linear-gradient(rgba(245, 255, 145, 0.8), white);
   color: #6A0136;
     
 `
 
 const MidSectionHead = styled.span`
   text-align: center;
-  font-size: 1rem;
+  font-size: 2rem;
   display: inline-block;
-  text-decoration: underline dotted;
+  text-decoration: underline;
   text-decoration-thickness: 5px;
+  & h3 {
+    text-decoration: none;
+  }
+`
+
+const InfoSection = styled.section`
+  width: 100%;
+  height: 100vh;
+  padding: 5vh 10vw;
+  background-image: linear-gradient(black, white);
+`
+
+const RightSectionHead = styled(Right)`
+  height: 60vh;
+  //border: 2px solid firebrick;
+    flex-direction: column;
+  justify-content: center;
+  & h3 {
+    margin-top: 5vh;
+  }
+
 `
 export default AboutPage
