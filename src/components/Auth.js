@@ -2,7 +2,9 @@ import work from "../work.svg"
 import React, {useEffect, useRef, useState} from "react";
 
 import styled from "styled-components";
+import {useNavigate } from "react-router-dom";
 const Auth = () => {
+    const navigate = useNavigate()
     const [logged, setLogged] = useState(false)
     const name = useRef(null)
     const mail = useRef(null)
@@ -44,13 +46,32 @@ const Auth = () => {
         return formValid
     }
 
-    const loginHandler = (event) => {
+    const loginHandler = async (event) => {
         event.preventDefault()
         if ((mail.current.value.trim() !== "" && mail.current.value.includes("@") && mail.current.value.includes(".")) && password1.current.value.trim() !== ""){
             setForm2Valid(true)
         }
         if (form2Valid){
+            await fetch("https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyBbR6OB6GtRMvJWOOJ1LZgxP1OZM0w26sI",{
+                method: 'POST',
+                body: JSON.stringify({
+                    email: mail.current.value,
+                    password: password1.current.value,
+                    returnSecureToken: true
+                }),headers: {
+                    "Content-Type": "application/json"
+                }
+            })
+                .then(res => {
+                    if (res.ok) {
+
+                    }
+                }).catch(err => {
+                    console.log(err.json)
+                })
+            navigate("/list", { replace: true})
             console.log("We are ready to log in");
+
         }
     }
     useEffect(()=> {
