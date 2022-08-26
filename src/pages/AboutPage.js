@@ -179,7 +179,7 @@ const MidSection = styled.section`
 `
 
 const BottomSection = styled.section`
-  height: 100vh;
+  height: 25vh;
   padding: 10vh 10vw;
   width: 100%;
   background-color: rgba(245, 255, 145, 0.8);

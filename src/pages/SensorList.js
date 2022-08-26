@@ -187,9 +187,9 @@ const Details = styled.div`
   min-width: 160px;
   height: 55%;
   border-radius: 20px;
-  border: 1px solid cornflowerblue;
   margin-top: 3vh;
-  padding: 13px;
+  margin-left: 3vw;
+  //padding: 13px;
   @media (max-width: 600px){
     width: 70vw;
     min-width: unset;

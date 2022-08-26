@@ -5,7 +5,6 @@ const NavBar = () => {
         <>
             <FullBar>
                 <Logo>Sensor Project</Logo>
-                <Logo2>Sign Out</Logo2>
             </FullBar>
         </>
     )
@@ -13,14 +12,13 @@ const NavBar = () => {
 
 const FullBar = styled.nav`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   border-bottom: 1px solid white;
   height: 8.33vh;
   background-color: #1b1b1b;
   max-width: 100vw;
   padding: 0 10vw;
-  //border: 11px solid crimson;
 `
 
 const Logo = styled.h3`
