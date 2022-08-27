@@ -115,6 +115,7 @@ const Outline = styled.h4`
 const RightSensorInfo = styled.div`
     height: 100%;
     width: 50%;
+    border: 3px solid crimson;
     display: flex;
     @media (max-width: 1024px){
       width: 100%;
@@ -122,9 +123,16 @@ const RightSensorInfo = styled.div`
       justify-content: space-between;
       padding: 20px 10px;
     }
+  @media (max-height: 850px){
+    height: 80vh;
+  }
 `
 
-const LeftSensorInfo = styled(RightSensorInfo)``
+const LeftSensorInfo = styled(RightSensorInfo)`
+  @media (max-height: 850px){
+    height: 120vh;
+  }
+`
 
 
 const TempSensor = styled.div`
@@ -154,7 +162,7 @@ const InfoSpan = styled.span`
     font-size: 0.6rem;
   }
   @media (max-width: 380px){
-    font-size: 0.4rem;
+    font-size: 0.3rem;
   }
 `
 
