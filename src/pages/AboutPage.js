@@ -119,6 +119,8 @@ const RightSensorInfo = styled.div`
     width: 100%;
     display: flex;
   justify-content: space-between;
+  flex-direction: column;
+
   padding: 30px;
   align-items: center;
     @media (max-width: 1024px){
@@ -129,7 +131,8 @@ const RightSensorInfo = styled.div`
       padding: 20px 10px;
     }
   @media (max-height: 850px){
-    height: 100vh;
+    height: 200vh;
+    flex-direction: column;
   }
 `
 
@@ -156,17 +159,14 @@ const Sensors = styled.div`
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  height: 200vh;
+  height: 400vh;
 
 `
 
 const InfoSpan = styled.span`
   color: white;
   @media (max-width: 1024px){
-    font-size: 0.6rem;
-  }
-  @media (max-width: 380px){
-    font-size: 0.45rem;
+    font-size: 0.8rem;
   }
 `
 
@@ -341,7 +341,7 @@ const InfoSection = styled.section`
   width: 100%;
   flex-direction: column;
   display: flex;
-  height: 200vh;
+  height: 400vh;
 `
 
 const RightSectionHead = styled(Right)`
