@@ -116,12 +116,11 @@ const RightSensorInfo = styled.div`
     height: 100%;
     width: 50%;
     display: flex;
-    border: 2px solid dodgerblue;
     @media (max-width: 1024px){
       width: 100%;
       height: 100%;
       justify-content: space-between;
-      padding: 20px 30px;
+      padding: 20px 10px;
     }
 `
 
@@ -153,6 +152,9 @@ const InfoSpan = styled.span`
   color: white;
   @media (max-width: 1024px){
     font-size: 0.6rem;
+  }
+  @media (max-width: 380px){
+    font-size: 0.4rem;
   }
 `
 
@@ -327,7 +329,6 @@ const InfoSection = styled.section`
   width: 100%;
   height: 100vh;
   display: flex;
-  border: 2px solid seagreen;
   flex-direction: column;
   @media (max-width: 1024px){
     height: 200vh;
