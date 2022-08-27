@@ -104,6 +104,8 @@ const AboutPage = () => {
 
 const Wrapper = styled.div`
   width: 100%;
+  overflow: hidden;
+  height: 100%;
   //background-image: linear-gradient(white, black);
 `
 
@@ -143,6 +145,9 @@ const TempSensor = styled.div`
   height: 90vh;
   padding: 0 30px;
   width: 100%;
+  @media (max-width: 400px){
+    margin: 10px 0;
+  }
 `
 
 const Sensors = styled.div`
