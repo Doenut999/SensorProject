@@ -115,23 +115,21 @@ const Outline = styled.h4`
 const RightSensorInfo = styled.div`
     height: 100%;
     width: 50%;
-    border: 3px solid crimson;
     display: flex;
     @media (max-width: 1024px){
       width: 100%;
       height: 100%;
+      flex-direction: column;
       justify-content: space-between;
       padding: 20px 10px;
     }
   @media (max-height: 850px){
-    height: 80vh;
+    height: 100vh;
   }
 `
 
 const LeftSensorInfo = styled(RightSensorInfo)`
-  @media (max-height: 850px){
-    height: 120vh;
-  }
+
 `
 
 
@@ -148,6 +146,7 @@ const Sensors = styled.div`
   display: flex;
   width: 100vw;
   height: 90vh;
+  min-width: 340px;
   justify-content: space-around;
   align-items: center;
   @media (max-width: 1024px){
