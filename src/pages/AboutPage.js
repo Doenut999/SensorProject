@@ -110,12 +110,16 @@ const Wrapper = styled.div`
 const Outline = styled.h4`
   font-size: 1.5rem;
   text-align: center;
+  margin: 20px;
 `
 
 const RightSensorInfo = styled.div`
     height: 100%;
-    width: 50%;
+    width: 100%;
     display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  align-items: center;
     @media (max-width: 1024px){
       width: 100%;
       height: 100%;
@@ -129,7 +133,6 @@ const RightSensorInfo = styled.div`
 `
 
 const LeftSensorInfo = styled(RightSensorInfo)`
-
 `
 
 
@@ -138,21 +141,19 @@ const TempSensor = styled.div`
   color: coral;
   flex-direction: column;
   height: 90vh;
-  padding: 0 10px;
+  padding: 0 30px;
   width: 100%;
 `
 
 const Sensors = styled.div`
   display: flex;
   width: 100vw;
-  height: 90vh;
   min-width: 340px;
   justify-content: space-around;
   align-items: center;
-  @media (max-width: 1024px){
-    flex-direction: column;
-    height: 200vh;
-  }
+  flex-direction: column;
+  height: 200vh;
+
 `
 
 const InfoSpan = styled.span`
@@ -161,7 +162,7 @@ const InfoSpan = styled.span`
     font-size: 0.6rem;
   }
   @media (max-width: 380px){
-    font-size: 0.3rem;
+    font-size: 0.45rem;
   }
 `
 
@@ -334,14 +335,9 @@ const SensorHeader = styled.header`
 
 const InfoSection = styled.section`
   width: 100%;
-  height: 100vh;
-  display: flex;
   flex-direction: column;
-  @media (max-width: 1024px){
-    height: 200vh;
-  }
-
-
+  display: flex;
+  height: 200vh;
 `
 
 const RightSectionHead = styled(Right)`
