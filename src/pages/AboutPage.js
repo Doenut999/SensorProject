@@ -104,7 +104,6 @@ const AboutPage = () => {
 
 const Wrapper = styled.div`
   width: 100%;
-  overflow: hidden;
   height: 100%;
   //background-image: linear-gradient(white, black);
 `
