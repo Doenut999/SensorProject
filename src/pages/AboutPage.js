@@ -6,7 +6,7 @@ import Heather from "../components/Heather";
 const AboutPage = () => {
 
     return (
-        <>
+        <Wrapper>
             <AboutNav>
                 Sensor Project
             </AboutNav>
@@ -24,48 +24,53 @@ const AboutPage = () => {
 
             </HeadSection>
             <InfoSection>
-                <h1 style={{fontSize: "2rem", textAlign: "center", textDecoration: "underline"}}>Outline</h1>
+                <Outline>Outline</Outline>
                 <Sensors>
-                    <TempSensor>
-                        <h5 style={{fontSize: "2rem", fontWeight: "bold"}}> Temperature automotive sensors</h5>
-                        <span>
-                    Temperature sensors have a crucial role in automotive performance and should be operated across a range of -40° C to 1500° C.
+                    <LeftSensorInfo>
+                        <TempSensor>
+                            <SensorHeader> Temperature automotive sensors</SensorHeader>
+                            <InfoSpan>
                     The different kinds of temperature sensors used are silicon (Si)-based integrated circuit (IC) chips, resistive temperature detectors and thermistors.
                     Si-based temperature sensor IC chips deliver high precision, durability, stability and linearity ranging from -55° C to 150° C.
                     Such digital temperature sensors are made up of registers for monitoring IC functions, digital interface circuits, an analog-to-digital converter and a
                     temperature sensor with a transistor present at its core. The output of these sensors is either digital, voltage or current. The emitter-base voltage of
                     the transistor changes with temperature. Resistive temperature detector automotive sensors typically include a metal with a positive temperature coefficient,
-                    with resistance and temperature directly proportional to each other. The temperature range of such sensors is from -240° C to 1000° C and they deliver medium
-                    sensitivity, decent linearity, reasonable time response, incredible life expectancy and high precision in comparison to other types. Thermistors depend upon
-                    the positive or negative temperature coefficient properties of ceramic-oxide composites, which allows them to quickly change resistance when subjected to a
-                    temperature change. Moreover, temperature sensors with a thermistor base can sense temperatures from -40° C to 250° C.
-                        </span>
-                    </TempSensor>
-
-                    <Temp3>
-                        <h5 style={{fontSize: "2rem", fontWeight: "bold"}}>Mass airflow and inertial automotive sensors</h5>
-
-                        Mass airflow sensors calculate how much air goes through an engine and quantify the steady-state and transient mass airflow. The engine's combustion process
+                    with resistance and temperature directly proportional to each other.Thermistors depend upon the positive or negative temperature coefficient properties of
+                    ceramic-oxide composites, which allows them to quickly change resistance when subjected to a
+                    temperature change.
+                        </InfoSpan>
+                        </TempSensor>
+                        <Temp3>
+                            <SensorHeader>Mass airflow and inertial automotive sensors</SensorHeader>
+                            <InfoSpan>
+                            Mass airflow sensors calculate how much air goes through an engine and quantify the steady-state and transient mass airflow. The engine's combustion process
                         can be monitored by adding an appropriate fuel ratio into the mass flow of incoming air. Consequently, a calculation of mass airflow is important for determining
                         how much fuel to put in an engine for regulating emissions, efficiency and expense. Inertial sensors help assess the state of motion of automobiles and perform a
                         critical role in chassis control and safety systems. For safety systems, inertial sensors can be manufactured by utilizing surface technology, and for chassis control,
                         these devices can be fabricated using bulk micromachining technology.
-                    </Temp3>
-                    <Temp4>
-                        <h5 style={{fontSize: "2rem", fontWeight: "bold"}}>Position and speed automotive sensors</h5>
-
-                        Position sensors are vital components designed to measure throttle angle of engines, check the level of fuel, track steering wheel angle, measure the pedal position of brakes and accelerometer, select the gear position, record clutch position, measure seat position and monitor the position of the motor. When selecting a suitable position sensor, its measurement range, time response, operating condition, accuracy, cost, weight and size are some important parameters that must be considered.
+                        </InfoSpan>
+                        </Temp3>
+                    </LeftSensorInfo>
+                    <RightSensorInfo>
+                        <Temp4>
+                            <SensorHeader>Position and speed automotive sensors</SensorHeader>
+                            <InfoSpan>
+                            Position sensors are vital components designed to measure throttle angle of engines, check the level of fuel, track steering wheel angle, measure the pedal position of brakes and accelerometer, select the gear position, record clutch position, measure seat position and monitor the position of the motor. When selecting a suitable position sensor, its measurement range, time response, operating condition, accuracy, cost, weight and size are some important parameters that must be considered.
 
                         Speed automotive sensors monitor the engine, crankshaft, wheel and camshaft speed and are utilized for gear shifting that is electronically controlled and input/output transmission control. The latest smart sensors are also the new hot component for the traction control system and stability of vehicles and antilock braking systems.
-                    </Temp4>
-                    <Temp2>
-                        <h5 style={{fontSize: "2rem", fontWeight: "bold"}}>Pressure and gas automotive sensors</h5>
-                        <span>Pressure sensors are crucial for gauging pressure at the common rail, oil tank, fuel tank, inlet manifold, brake fluid, atmospheric ambient, chassis,
+
+                      </InfoSpan>
+                        </Temp4>
+                        <Temp2>
+                            <SensorHeader>Pressure and gas automotive sensors</SensorHeader>
+                            <InfoSpan>Pressure sensors are crucial for gauging pressure at the common rail, oil tank, fuel tank, inlet manifold, brake fluid, atmospheric ambient, chassis,
                     air conditioner compressor, tire and adaptive suspension system. Such sensing is also crucial for ignition and fuel control systems. Gas sensors are primarily
                     used to gauge the oxygen concentration in exhaust gases and secondarily to measure hydrogen, nitrogen monoxide and carbon monoxide concentrations. For example,
-                    at the emission control system, an oxygen concentration sensor can control the amount of polluting gas present or released.</span>
-                    </Temp2>
+                    at the emission control system, an oxygen concentration sensor can control the amount of polluting gas present or released.</InfoSpan>
+                        </Temp2>
+                    </RightSensorInfo>
                 </Sensors>
+
             </InfoSection>
             <MidSection>
                 <Left>
@@ -93,21 +98,43 @@ const AboutPage = () => {
             <BottomSection>
                 <span>Checking text color for contrast and appearance</span>
             </BottomSection>
-        </>
+        </Wrapper>
     )
 }
+
+const Wrapper = styled.div`
+  width: 100%;
+  //background-image: linear-gradient(white, black);
+`
+
+const Outline = styled.h4`
+  font-size: 1.5rem;
+  text-align: center;
+`
+
+const RightSensorInfo = styled.div`
+    height: 100%;
+    width: 50%;
+    display: flex;
+    border: 2px solid dodgerblue;
+    @media (max-width: 1024px){
+      width: 100%;
+      height: 100%;
+      justify-content: space-between;
+      padding: 20px 30px;
+    }
+`
+
+const LeftSensorInfo = styled(RightSensorInfo)``
+
 
 const TempSensor = styled.div`
   //margin-top: 20vh;
   color: coral;
   flex-direction: column;
-  height: 90%;
+  height: 90vh;
   padding: 0 10px;
-  width: 40%;
-
-  & span {
-    font-size: 0.90rem;
-  }
+  width: 100%;
 `
 
 const Sensors = styled.div`
@@ -116,6 +143,17 @@ const Sensors = styled.div`
   height: 90vh;
   justify-content: space-around;
   align-items: center;
+  @media (max-width: 1024px){
+    flex-direction: column;
+    height: 200vh;
+  }
+`
+
+const InfoSpan = styled.span`
+  color: white;
+  @media (max-width: 1024px){
+    font-size: 0.6rem;
+  }
 `
 
 const Temp2 = styled(TempSensor)``
@@ -200,7 +238,7 @@ const AboutNav = styled.nav`
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: black;
+  //background-color: black;
   @media (max-width: 1024px){
     font-size: 2.5rem;
 }
@@ -212,7 +250,7 @@ const HeadSection = styled.section`
   padding: 5vh 5vw;
   width: 100%;
   height: 90vh;
-  background-color: black;
+  //background-color: black;
   display: flex;
   //border: 2px dotted seagreen;
   justify-content: space-evenly;
@@ -250,8 +288,7 @@ const MidSection = styled.section`
     height: 110vh;
   display: flex;
     width: 100%;
-  //background-color: seagreen;
-    background-image: linear-gradient(white,rgba(245, 255, 145, 0.8));
+
     color: purple;
 
 `
@@ -260,8 +297,6 @@ const BottomSection = styled.section`
   height: 25vh;
   padding: 10vh 10vw;
   width: 100%;
-  //background-color: seagreen;
-  background-image: linear-gradient(rgba(245, 255, 145, 0.8), white);
   color: #6A0136;
     
 `
@@ -277,15 +312,28 @@ const MidSectionHead = styled.span`
   }
 `
 
+const SensorHeader = styled.header`
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  
+  @media (max-width: 1024px){
+    font-size: 1rem;
+  }
+  text-decoration: underline;
+`
+
 const InfoSection = styled.section`
   width: 100%;
   height: 100vh;
   display: flex;
+  border: 2px solid seagreen;
   flex-direction: column;
-  background-color: purple;
-  //padding:0 10vw;
-  //background-color: greenyellow;
-  //background-image: linear-gradient(black, white);
+  @media (max-width: 1024px){
+    height: 200vh;
+  }
+
+
 `
 
 const RightSectionHead = styled(Right)`
