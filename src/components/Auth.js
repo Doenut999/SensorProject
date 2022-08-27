@@ -3,16 +3,20 @@ import React, {useEffect, useRef, useState} from "react";
 
 import styled from "styled-components";
 import {useNavigate } from "react-router-dom";
-const Auth = () => {
-    const navigate = useNavigate()
-    const [logged, setLogged] = useState(false)
-    const name = useRef(null)
-    const mail = useRef(null)
-    const password1 = useRef(null)
-    const password2 = useRef(null)
-    const [passwordEqual, setPasswordEqual] = useState(false)
-    const [formValid, setFormValid] = useState(false)
-    const [form2Valid, setForm2Valid] = useState(false)
+
+
+    const Auth = () => {
+
+        const navigate = useNavigate()
+        const [logged, setLogged] = useState(false)
+        const name = useRef(null)
+        const mail = useRef(null)
+        const password1 = useRef(null)
+        const password2 = useRef(null)
+        const [passwordEqual, setPasswordEqual] = useState(false)
+        const [formValid, setFormValid] = useState(false)
+        const [form2Valid, setForm2Valid] = useState(false)
+
 
     const signupHandler = async (event)=> {
         event.preventDefault()
@@ -131,7 +135,6 @@ const Auth = () => {
 
 )
 }
-;
 
 const Main = styled.img`
   width: 50%;
