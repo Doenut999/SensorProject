@@ -27,7 +27,7 @@ const AboutPage = () => {
                 <Outline>Outline</Outline>
                 <Sensors>
                     <LeftSensorInfo>
-                        <TempSensor>
+                        <TempSensor as={motion.div} initial={{y: 100, opacity: 0.15}} whileInView={{y: 0, opacity: 1}} viewport={{once: false, amount: 0.45}}>
                             <SensorHeader> Temperature automotive sensors</SensorHeader>
                             <InfoSpan>
                     The different kinds of temperature sensors used are silicon (Si)-based integrated circuit (IC) chips, resistive temperature detectors and thermistors.
@@ -40,7 +40,7 @@ const AboutPage = () => {
                     temperature change.
                         </InfoSpan>
                         </TempSensor>
-                        <Temp3>
+                        <Temp3 as={motion.div} initial={{y: 100, opacity: 0.15}} whileInView={{y: 0, opacity: 1}} viewport={{once: false, amount: 0.45}}>
                             <SensorHeader>Mass airflow and inertial automotive sensors</SensorHeader>
                             <InfoSpan>
                             Mass airflow sensors calculate how much air goes through an engine and quantify the steady-state and transient mass airflow. The engine's combustion process
@@ -52,16 +52,15 @@ const AboutPage = () => {
                         </Temp3>
                     </LeftSensorInfo>
                     <RightSensorInfo>
-                        <Temp4>
+                        <Temp4 as={motion.div} initial={{y: 100, opacity: 0.15}} whileInView={{y: 0, opacity: 1}} viewport={{once: false, amount: 0.45}}>
                             <SensorHeader>Position and speed automotive sensors</SensorHeader>
                             <InfoSpan>
                             Position sensors are vital components designed to measure throttle angle of engines, check the level of fuel, track steering wheel angle, measure the pedal position of brakes and accelerometer, select the gear position, record clutch position, measure seat position and monitor the position of the motor. When selecting a suitable position sensor, its measurement range, time response, operating condition, accuracy, cost, weight and size are some important parameters that must be considered.
-
                         Speed automotive sensors monitor the engine, crankshaft, wheel and camshaft speed and are utilized for gear shifting that is electronically controlled and input/output transmission control. The latest smart sensors are also the new hot component for the traction control system and stability of vehicles and antilock braking systems.
 
                       </InfoSpan>
                         </Temp4>
-                        <Temp2>
+                        <Temp2 as={motion.div} initial={{y: 100, opacity: 0.15}} whileInView={{y: 0, opacity: 1}} viewport={{once: false, amount: 0.45}}>
                             <SensorHeader>Pressure and gas automotive sensors</SensorHeader>
                             <InfoSpan>Pressure sensors are crucial for gauging pressure at the common rail, oil tank, fuel tank, inlet manifold, brake fluid, atmospheric ambient, chassis,
                     air conditioner compressor, tire and adaptive suspension system. Such sensing is also crucial for ignition and fuel control systems. Gas sensors are primarily
@@ -166,8 +165,14 @@ const Sensors = styled.div`
 const InfoSpan = styled.span`
   color: white;
   @media (max-width: 1024px){
+    margin-top: 0;
+    display: inline;
     font-size: 0.8rem;
   }
+  width: 70%;
+  font-size: 1.414rem;
+  display: inline-block;
+  margin-top: 2vh;
 `
 
 const Temp2 = styled(TempSensor)``
@@ -208,6 +213,10 @@ const Ready = styled.div`
   box-shadow: 1px 1px 1px #54bc6a;
   margin-top: -7.5vh;
   background-color: dodgerblue;
+  
+  @media (max-width: 1024px){
+    height: 10vh;
+  }
 `
 const Logo = styled.h1`
   color: white;
@@ -239,6 +248,9 @@ const RButton = styled.button`
   &:hover{
     transform: scale(1.1);
   }
+  @media (max-width: 1024px){
+    scale: 0.7;
+  }
   transition: all 0.5s ease-in;
 `
 
@@ -264,9 +276,8 @@ const HeadSection = styled.section`
   padding: 5vh 5vw;
   width: 100%;
   height: 90vh;
-  //background-color: black;
+  background-image: linear-gradient(black, blueviolet);
   display: flex;
-  //border: 2px dotted seagreen;
   justify-content: space-evenly;
   align-items: center;
   & div {
@@ -302,8 +313,8 @@ const MidSection = styled.section`
     height: 110vh;
   display: flex;
     width: 100%;
-
-    color: purple;
+  background-image: linear-gradient(blueviolet, white);
+    color: white;
 
 `
 
@@ -312,6 +323,7 @@ const BottomSection = styled.section`
   padding: 10vh 10vw;
   width: 100%;
   color: #6A0136;
+  background-image: conic-gradient(white, palegreen);
     
 `
 
@@ -342,6 +354,7 @@ const InfoSection = styled.section`
   flex-direction: column;
   display: flex;
   height: 400vh;
+  background-color: blueviolet;
 `
 
 const RightSectionHead = styled(Right)`
