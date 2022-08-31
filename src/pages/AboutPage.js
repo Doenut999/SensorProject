@@ -27,7 +27,7 @@ const AboutPage = () => {
                 <Outline>Outline</Outline>
                 <Sensors>
                     <LeftSensorInfo>
-                        <TempSensor as={motion.div} initial={{y: 100, opacity: 0.15}} whileInView={{y: 0, opacity: 1}} viewport={{once: false, amount: 0.45}}>
+                        <TempSensor as={motion.div} initial={{y: 100, opacity: 0.15}} whileInView={{y: 0, opacity: 1}} viewport={{once: false, amount: 0.5}}>
                             <SensorHeader> Temperature automotive sensors</SensorHeader>
                             <InfoSpan>
                     The different kinds of temperature sensors used are silicon (Si)-based integrated circuit (IC) chips, resistive temperature detectors and thermistors.
@@ -40,7 +40,7 @@ const AboutPage = () => {
                     temperature change.
                         </InfoSpan>
                         </TempSensor>
-                        <Temp3 as={motion.div} initial={{y: 100, opacity: 0.15}} whileInView={{y: 0, opacity: 1}} viewport={{once: false, amount: 0.45}}>
+                        <Temp3 as={motion.div} initial={{y: 100, opacity: 0.15}} whileInView={{y: 0, opacity: 1}} viewport={{once: false, amount: 0.5}}>
                             <SensorHeader>Mass airflow and inertial automotive sensors</SensorHeader>
                             <InfoSpan>
                             Mass airflow sensors calculate how much air goes through an engine and quantify the steady-state and transient mass airflow. The engine's combustion process
@@ -52,7 +52,7 @@ const AboutPage = () => {
                         </Temp3>
                     </LeftSensorInfo>
                     <RightSensorInfo>
-                        <Temp4 as={motion.div} initial={{y: 100, opacity: 0.15}} whileInView={{y: 0, opacity: 1}} viewport={{once: false, amount: 0.45}}>
+                        <Temp4 as={motion.div} initial={{y: 100, opacity: 0.15}} whileInView={{y: 0, opacity: 1}} viewport={{once: false, amount: 0.5}}>
                             <SensorHeader>Position and speed automotive sensors</SensorHeader>
                             <InfoSpan>
                             Position sensors are vital components designed to measure throttle angle of engines, check the level of fuel, track steering wheel angle, measure the pedal position of brakes and accelerometer, select the gear position, record clutch position, measure seat position and monitor the position of the motor. When selecting a suitable position sensor, its measurement range, time response, operating condition, accuracy, cost, weight and size are some important parameters that must be considered.
@@ -60,7 +60,7 @@ const AboutPage = () => {
 
                       </InfoSpan>
                         </Temp4>
-                        <Temp2 as={motion.div} initial={{y: 100, opacity: 0.15}} whileInView={{y: 0, opacity: 1}} viewport={{once: false, amount: 0.45}}>
+                        <Temp2 as={motion.div} initial={{y: 100, opacity: 0.15}} whileInView={{y: 0, opacity: 1}} viewport={{once: false, amount: 0.5}}>
                             <SensorHeader>Pressure and gas automotive sensors</SensorHeader>
                             <InfoSpan>Pressure sensors are crucial for gauging pressure at the common rail, oil tank, fuel tank, inlet manifold, brake fluid, atmospheric ambient, chassis,
                     air conditioner compressor, tire and adaptive suspension system. Such sensing is also crucial for ignition and fuel control systems. Gas sensors are primarily
@@ -104,7 +104,6 @@ const AboutPage = () => {
 const Wrapper = styled.div`
   width: 100%;
   height: 100%;
-  //background-image: linear-gradient(white, black);
 `
 
 const Outline = styled.h4`
@@ -140,7 +139,6 @@ const LeftSensorInfo = styled(RightSensorInfo)`
 
 
 const TempSensor = styled.div`
-  //margin-top: 20vh;
   color: coral;
   flex-direction: column;
   height: 90vh;
@@ -284,7 +282,7 @@ const HeadSection = styled.section`
     margin: 5vh 0;
     height: 50%;
     width: 50%;
-    //
+
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -305,7 +303,6 @@ const Create = styled.button`
   border-radius: 15px;
   &:hover{
     transform: scale(1.15);
-    //color: white;
   }
   transition: all 0.4s ease-in;
 `
