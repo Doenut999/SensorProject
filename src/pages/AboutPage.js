@@ -92,7 +92,7 @@ const AboutPage = () => {
             </MidSection>
             <Ready>
                 Are you Ready now?
-                <RButton>Get Started</RButton>
+                <RButton to="/auth">Get Started</RButton>
             </Ready>
             <BottomSection>
                 <span>Checking text color for contrast and appearance</span>
@@ -236,11 +236,12 @@ const Left = styled.div`
   justify-content: space-around;
 `
 
-const RButton = styled.button`
+const RButton = styled(Link)`
   background-color: transparent;
   border: 1px solid white;
   padding: 8px;
   color: white;
+  text-decoration: none;
   cursor: pointer;
   border-radius: 3.5px;
   &:hover{
@@ -320,7 +321,7 @@ const BottomSection = styled.section`
   padding: 10vh 10vw;
   width: 100%;
   color: #6A0136;
-  background-image: conic-gradient(white, palegreen);
+  background-image: repeating-conic-gradient(white, palegreen);
     
 `
 

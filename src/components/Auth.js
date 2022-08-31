@@ -1,6 +1,5 @@
 import work from "../work.svg"
-import React, {useEffect, useRef, useState} from "react";
-
+import React, {useRef, useState} from "react";
 import styled from "styled-components";
 import {useNavigate } from "react-router-dom";
 
@@ -18,37 +17,37 @@ import {useNavigate } from "react-router-dom";
         const [form2Valid, setForm2Valid] = useState(false)
 
 
-    const signupHandler = async (event)=> {
+    const signupHandler =  async (event)=> {
         event.preventDefault()
-        if (password1.current.value === password2.current.value){
+        if (password1.current.value === password2.current.value) {
             setPasswordEqual(true)
         }
-        if((mail.current.value.trim() !== "" && mail.current.value.includes("@") && mail.current.value.includes(".")) && password1.current.value.trim() !== "" && passwordEqual){
+        if ((mail.current.value.trim() !== "" && mail.current.value.includes("@") && mail.current.value.includes(".")) && password1.current.value.trim() !== "" && passwordEqual) {
             setFormValid(true)
         }
-        if (formValid){
+        if (formValid) {
             await fetch("https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyBbR6OB6GtRMvJWOOJ1LZgxP1OZM0w26sI ", {
                 method: 'POST',
                 body: JSON.stringify({
                     email: mail.current.value,
                     password: password1.current.value,
                     returnSecureToken: true
-                }),headers: {
+                }), headers: {
                     "Content-Type": "application/json"
-            }
+                }
             })
                 .then(res => {
                     if (res.ok) {
 
                     }
                 }).catch(err => {
-                        console.log(err.json)
+                    console.log(err.json)
                 })
             setLogged(!logged)
             console.log("We are ready to roll");
         }
-        return formValid
-    }
+        return formValid}
+
 
     const loginHandler = async (event) => {
         event.preventDefault()
@@ -78,12 +77,11 @@ import {useNavigate } from "react-router-dom";
 
         }
     }
-    useEffect(()=> {
-        console.log("Started")
-        if (form2Valid){
-            console.log("Login Form is valid")
-        }
-    }, [form2Valid])
+    //
+    // useEffect(()=> {
+    //     signupHandler()
+    // },[signupHandler])
+
     return (
         <>
             <Card>
@@ -133,8 +131,7 @@ import {useNavigate } from "react-router-dom";
             </Card>
         </>
 
-)
-}
+)}
 
 const Main = styled.img`
   width: 50%;
