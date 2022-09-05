@@ -7,10 +7,10 @@ const Footer = () => {
             <h1 style={{textDecoration: "underline"}}>Contact Us</h1>
             <h3 style={{textDecoration: "underline"}}>Team Members</h3>
             <People>
-                <span><div><span title="024 450 1927">Samuel Kpornu Dawson</span></div> <div>3603018</div></span>
-                <span><div><span title="055 462 9701">Akpabla Andreas</span></div> <div>3602218</div></span>
-                <span><div><span title="020 121 5534">Osei Sarfo Gideon</span></div><div> 3605018</div></span>
-                <span><div><span title="050 441 3325">Kwarteng Peprah Emmanuel</span></div><div>3603718</div></span>
+                <span><div><span title="024 450 1927">Samuel Kpornu Dawson</span></div> <>3603018</></span>
+                <span><div><span title="055 462 9701">Akpabla Andreas</span></div> <>3602218</></span>
+                <span><div><span title="020 121 5534">Osei Sarfo Gideon</span></div><> 3605018</></span>
+                <span><div><span title="050 441 3325">Kwarteng Emmanuel</span></div><>3603718</></span>
             </People>
         </Full>
     )
@@ -35,6 +35,7 @@ const People = styled.div`
   align-items: center;
   & span {
     width: 100%;
+    text-align: left;
     display: inline-flex;
     justify-content: space-around;
     @media (max-width: 400px){
