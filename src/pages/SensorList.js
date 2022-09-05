@@ -194,6 +194,7 @@ const Sensor = styled.div`
   min-width: 350px;
   padding: 20px;
   display: flex;
+  cursor: pointer;
   border-radius: 20px;
   justify-content: space-around;
   align-items: center;

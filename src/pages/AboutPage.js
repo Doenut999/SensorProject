@@ -2,6 +2,7 @@ import styled from "styled-components";
 import {Link} from "react-router-dom";
 import {motion} from "framer-motion";
 import Heather from "../components/Heather";
+import Footer from "../components/Footer";
 
 const AboutPage = () => {
 
@@ -17,7 +18,6 @@ const AboutPage = () => {
                     <Link to="auth"><Create>Create Account</Create></Link>
                 </div>
                 <motion.div className="right"
-                            // style={{border: "3px solid greenyellow"}}
                             initial={{x: "200vw"}} animate={{x:0}} transition={{duration: 1.9, delay: 0.2, type: "spring", stiffness: 40}}>
                     <Heather  />
                 </motion.div>
@@ -56,8 +56,7 @@ const AboutPage = () => {
                             <SensorHeader>Position and speed automotive sensors</SensorHeader>
                             <InfoSpan>
                             Position sensors are vital components designed to measure throttle angle of engines, check the level of fuel, track steering wheel angle, measure the pedal position of brakes and accelerometer, select the gear position, record clutch position, measure seat position and monitor the position of the motor. When selecting a suitable position sensor, its measurement range, time response, operating condition, accuracy, cost, weight and size are some important parameters that must be considered.
-                        Speed automotive sensors monitor the engine, crankshaft, wheel and camshaft speed and are utilized for gear shifting that is electronically controlled and input/output transmission control. The latest smart sensors are also the new hot component for the traction control system and stability of vehicles and antilock braking systems.
-
+                        Speed automotive sensors monitor the engine, crankshaft, wheel and camshaft speed and are utilized for gear shifting that is electronically controlled and input/output transmission control. The latest smart sensors are also the new hot component for the traction control system and stability of vehicles and anti-lock braking systems.
                       </InfoSpan>
                         </Temp4>
                         <Temp2 as={motion.div} initial={{y: 100, opacity: 0.15}} whileInView={{y: 0, opacity: 1}} viewport={{once: false, amount: 0.5}}>
@@ -97,6 +96,7 @@ const AboutPage = () => {
             <BottomSection>
                 <span>Checking text color for contrast and appearance</span>
             </BottomSection>
+            <Footer/>
         </Wrapper>
     )
 }
@@ -229,7 +229,6 @@ const Left = styled.div`
   width: 55%;
   height: 75vh;
   padding: 20px;
-  //border: 1px solid crimson;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -263,7 +262,6 @@ const AboutNav = styled.nav`
   justify-content: center;
   align-items: center;
   width: 100%;
-  //background-color: black;
   @media (max-width: 1024px){
     font-size: 2.5rem;
 }
@@ -319,7 +317,6 @@ const BottomSection = styled.section`
   padding: 10vh 10vw;
   width: 100%;
   color: #6A0136;
-  //background-image: repeating-conic-gradient(white, palegreen);
   
 `
 
@@ -354,7 +351,6 @@ const InfoSection = styled.section`
 
 const RightSectionHead = styled(Right)`
   height: 60vh;
-  //border: 2px solid firebrick;
     flex-direction: column;
   justify-content: center;
   & h3 {
