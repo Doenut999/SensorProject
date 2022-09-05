@@ -133,7 +133,6 @@ const RightSensorInfo = styled.div`
 const LeftSensorInfo = styled(RightSensorInfo)`
 `
 
-
 const TempSensor = styled.div`
   color: coral;
   flex-direction: column;
@@ -248,7 +247,6 @@ const RButton = styled(Link)`
   transition: all 0.5s ease-in;
 `
 
-
 const AboutNav = styled.nav`
   height: 10vh;
   color: white;
@@ -265,6 +263,7 @@ const AboutNav = styled.nav`
     font-size: 1.5rem;
   }
 `
+
 const HeadSection = styled.section`
   padding: 5vh 5vw;
   width: 100%;
@@ -286,8 +285,6 @@ const HeadSection = styled.section`
   }
 `
 
-
-
 const Create = styled.button`
   background-color: #00A6ED;
   border: 1px solid transparent;
@@ -300,6 +297,7 @@ const Create = styled.button`
   }
   transition: all 0.4s ease-in;
 `
+
 const MidSection = styled.section`
     height: 110vh;
   display: flex;
@@ -354,4 +352,5 @@ const RightSectionHead = styled(Right)`
   }
 
 `
+
 export default AboutPage

@@ -7,10 +7,10 @@ const Footer = () => {
             <h1 style={{textDecoration: "underline"}}>Contact Us</h1>
             <h3 style={{textDecoration: "underline"}}>Team Members</h3>
             <People>
-                <span>Samuel Kpornu Dawson</span>
-                <span>Akpabla Andreas</span>
-                <span>Osei Sarfo Gideon</span>
-                <span>Kwarteng Peprah Emmanuel</span>
+                <span>Samuel Kpornu Dawson - 3603018</span>
+                <span>Akpabla Andreas - 360218</span>
+                <span>Osei Sarfo Gideon - 3605018</span>
+                <span>Kwarteng Peprah Emmanuel - 3603718</span>
             </People>
         </Full>
     )
@@ -19,7 +19,6 @@ const Footer = () => {
 const Full = styled.footer`
     width: 100%;
     height: 20vh;
-  border: palegreen 2px solid;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
