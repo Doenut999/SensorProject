@@ -7,10 +7,10 @@ const Footer = () => {
             <h1 style={{textDecoration: "underline"}}>Contact Us</h1>
             <h3 style={{textDecoration: "underline"}}>Team Members</h3>
             <People>
-                <span>Samuel Kpornu Dawson - 3603018</span>
-                <span>Akpabla Andreas - 360218</span>
-                <span>Osei Sarfo Gideon - 3605018</span>
-                <span>Kwarteng Peprah Emmanuel - 3603718</span>
+                <span><span title="024 450 1927">Samuel Kpornu Dawson</span> - 3603018</span>
+                <span><span title="055 462 9701">Akpabla Andreas</span> - 360218</span>
+                <span><span title="020 121 5534">Osei Sarfo Gideon</span> - 3605018</span>
+                <span><span title="050 441 3325">Kwarteng Peprah Emmanuel</span> - 3603718</span>
             </People>
         </Full>
     )
