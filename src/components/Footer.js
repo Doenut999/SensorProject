@@ -27,7 +27,6 @@ const Full = styled.footer`
 
 const People = styled.div`
   display: flex;
-  border: 2px solid blueviolet;
   width: 100%;
   min-width: 300px;
   flex-direction: column;
