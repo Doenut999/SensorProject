@@ -72,10 +72,6 @@ const AboutPage = () => {
             </InfoSection>
             <MidSection>
                 <Left>
-                    <MidSectionHead>Who We Are</MidSectionHead>
-
-                {/*    //TODO: in this section add, the vision, the mission and the team*/}
-
                 <Vision>
                     <MidSectionHead>Vision</MidSectionHead>
                     <h3>For as many roadside mechanics to be able to identify sensors on sight and identify the possible faults and be able to diagnose problems with each</h3>
