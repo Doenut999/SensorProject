@@ -275,7 +275,6 @@ const HeadSection = styled.section`
   padding: 5vh 5vw;
   width: 100%;
   height: 90vh;
-  background-image: linear-gradient(black, blueviolet);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -311,7 +310,6 @@ const MidSection = styled.section`
     height: 110vh;
   display: flex;
     width: 100%;
-  background-image: linear-gradient(blueviolet, white);
     color: white;
 
 `
@@ -321,8 +319,8 @@ const BottomSection = styled.section`
   padding: 10vh 10vw;
   width: 100%;
   color: #6A0136;
-  background-image: repeating-conic-gradient(white, palegreen);
-    
+  //background-image: repeating-conic-gradient(white, palegreen);
+  
 `
 
 const MidSectionHead = styled.span`
@@ -352,7 +350,6 @@ const InfoSection = styled.section`
   flex-direction: column;
   display: flex;
   height: 400vh;
-  background-color: blueviolet;
 `
 
 const RightSectionHead = styled(Right)`
