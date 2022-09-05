@@ -4,7 +4,8 @@ const OilLevelSensor = () => {
 
     return (
         <Whole>
-            <MainFrame width="560" height="315" src="https://www.youtube.com/embed/YpdLUND7yQ4"
+            <h1 style={{fontSize: "2.5rem", textDecoration: "underline"}}>Oil Level Sensor</h1>
+            <MainFrame width="1120" height="630" src="https://www.youtube.com/embed/YpdLUND7yQ4"
                     title="YouTube video player" frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen/>
@@ -14,9 +15,10 @@ const OilLevelSensor = () => {
 
 const Whole = styled.div`
     width: 100%;
-  height: 100vh;
+  height: 80vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
 `
 const MainFrame = styled.iframe`
