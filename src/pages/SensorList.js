@@ -205,7 +205,6 @@ const Sensor = styled.div`
   margin: 15vh 15vw;
 
   & img {
-    float: left;
     width: 200px;
     height: 200px;
     object-fit: cover;
