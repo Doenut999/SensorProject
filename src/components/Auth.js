@@ -213,7 +213,6 @@ const Form = styled.div`
      display: flex;
      justify-content: space-around;
      align-items: center;
-     border: 2px solid red;
    }
 
   @media (max-width: 1024px) {
