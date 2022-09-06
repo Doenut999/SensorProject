@@ -21,7 +21,6 @@ const App = ()  =>{
             <Route path="/" element={<AboutPage />} />
             <Route path="auth" element={<LogSignWelcome />}/>
             <Route path="list" element={<SensorList />} />
-            //Pages to each Sensors YouTube>
             <Route path="fuel-sensor" element={<FuelSensorIframe />} />
             <Route path="oxygen-sensor" element={<OxygenSensor />} />
             <Route path="coolant-temp-sensor" element={<CoolantTemperature />} />
