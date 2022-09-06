@@ -4,7 +4,7 @@ const OxygenSensor = () => {
 
     return (
         <Whole>
-            <h1 style={{fontSize: "2.5rem", textDecoration: "underline"}}>Fuel Level Sensor</h1>
+            <h1 style={{fontSize: "2.5rem", textDecoration: "underline"}}>Oxygen Sensor</h1>
 
             <MainFrame width="1120" height="630" src="https://www.youtube.com/embed/Kc8fzNQabNk"
                     title="YouTube video player" frameBorder="0"
