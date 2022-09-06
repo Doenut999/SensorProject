@@ -10,7 +10,7 @@ const AboutPage = () => {
         <Wrapper>
              <AboutNav>
                  Sensor Project
-             </AboutNav>}
+             </AboutNav>
              <HeadSection>
                  <div style={{minWidth: 300}}>
                      <Logo as={motion.h1} initial={{y: 200, opacity: 0}} animate={{y:0, opacity: 1}} transition={{type: "spring", stiffness: 50}}>Automobile Sensor Project</Logo>
@@ -89,9 +89,6 @@ const AboutPage = () => {
                  Are you Ready now?
                  <RButton to="/auth">Get Started</RButton>
              </Ready>
-             <BottomSection>
-                 <span>Checking text color for contrast and appearance</span>
-             </BottomSection>
              <Footer/>
          </Wrapper>
      )
@@ -178,9 +175,7 @@ const AboutPage = () => {
    align-items: center;
    height: 20%;
    width: 70%;
-   & h3 {
-     margin-top: 5vh;
-   }
+
  `
 
  const Right = styled.div`
@@ -243,6 +238,11 @@ const AboutPage = () => {
    }
    @media (max-width: 1024px){
      scale: 0.7;
+     font-size: 0.9rem;
+   }
+   
+   @media (max-width: 440px){
+     font-size: 0.8rem;
    }
    transition: all 0.5s ease-in;
  `
@@ -306,13 +306,7 @@ const AboutPage = () => {
 
  `
 
- const BottomSection = styled.section`
-   height: 25vh;
-   padding: 10vh 10vw;
-   width: 100%;
-   color: #6A0136;
 
- `
 
  const MidSectionHead = styled.span`
    text-align: center;
@@ -347,9 +341,6 @@ const AboutPage = () => {
    height: 60vh;
      flex-direction: column;
    justify-content: center;
-   & h3 {
-     margin-top: 5vh;
-   }
 
  `
 

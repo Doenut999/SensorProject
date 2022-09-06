@@ -33,15 +33,4 @@ const Logo = styled.h3`
   transition: color 0.4s ease;
 `
 
-const Logo2 = styled(Logo)`
-  border: 1px solid rebeccapurple;
-  padding: 1px 8px;
-  cursor: pointer;
-  &:hover {
-    transform: scale(1.2);
-    border-radius: 7px;
-  }
-  transition: transform .7s ease;
-
-`
 export default NavBar

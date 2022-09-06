@@ -17,6 +17,7 @@ const Footer = () => {
 }
 
 const Full = styled.footer`
+  margin-top: 10vh;
     width: 100%;
     height: 20vh;
   display: flex;
