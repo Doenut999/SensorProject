@@ -199,7 +199,7 @@ const Form = styled.div`
   }
 
   & .input-wrapper {
-    width: 60%;
+    width: 100%;
     height: 80%;
     display: flex;
     justify-content: center;
