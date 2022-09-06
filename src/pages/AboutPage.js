@@ -90,7 +90,6 @@ const AboutPage = () => {
                 <RButton to="/auth">Get Started</RButton>
             </Ready>
             <BottomSection>
-                <span>Checking text color for contrast and appearance</span>
             </BottomSection>
             <Footer/>
         </Wrapper>
