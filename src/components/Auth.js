@@ -199,7 +199,6 @@ const Form = styled.div`
   }
 
   & .input-wrapper {
-    margin: 5vh 10vw;
     width: 60%;
     height: 80%;
     display: flex;
@@ -209,8 +208,12 @@ const Form = styled.div`
   }
 
    & .switcher{
-     width: 80vw; !important;
-     height: 20vh;
+     width: 100%;
+     height: 20%;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     border: 2px solid red;
    }
 
   @media (max-width: 1024px) {
