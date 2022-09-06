@@ -22,7 +22,18 @@ const Whole = styled.div`
   align-items: center;
 `
 const MainFrame = styled.iframe`
+  @media (max-width: 1024px){
+    width: 560px;
+    height: 315px;
+  }
 
+  @media (max-width: 600px){
+    width: 360px;
+    height: 315px;
+  }
+  @media (max-width: 400px){
+    width: 260px;
+  }
 `
 
 export default OilLevelSensor
