@@ -191,7 +191,7 @@ const SensorList = () => {
 const Sensor = styled.div`
 
   width: 70vw;
-  height: 20vh;
+  height: 70vh;
   min-height: 350px;
   min-width: 350px;
   padding: 20px;
@@ -202,7 +202,7 @@ const Sensor = styled.div`
   align-items: center;
   border: 1px solid goldenrod;
   //border-radius: 40px;
-  margin: 5vh 15vw;
+  margin: 15vh 15vw;
 
   & img {
     float: left;
