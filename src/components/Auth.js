@@ -122,7 +122,7 @@ import {useNavigate } from "react-router-dom";
                                 </div>
                             </div>
                         }
-                        <div className="switcher">
+                        <div className="switcher" >
                             <Complete type="submit" onClick={logged ? signupHandler : loginHandler}>{logged ? <h2>Create My Account</h2> : <h2>Log In</h2>}</Complete>
                             <IntentButton onClick={()=> setLogged(prevState => !prevState)}>{logged ? <h2>I have An Account</h2> : <h2>New Account</h2>}</IntentButton>
                         </div>
@@ -150,25 +150,25 @@ const Complete = styled.button`
   border: none;
   padding: 8px;
   color: white;
-  //cursor: pointer;
+  font-size: 0.9rem;
+  scale: 0.9;
+  cursor: pointer;
   //border-radius: 3.5px;
   //&:hover{
   //  transform: scale(1.1);
   //}
-  //transition: all 0.5s ease-in;
-  //@media (max-width: 400px){
-  //  scale: 0.7;
-  //}
+  transition: all 0.5s ease-in;
+  @media (max-width: 420px){
+    scale: 0.7;
+  }
 `
 
 const Form = styled.div`
     width: 100%;
     height: 100%;
     & .inputs {
-      //margin: 10vh 10vw;
       width: 100%;
       height: 100%;
-      //border: 1px solid greenyellow;
       display: flex;
       flex-flow: column nowrap;
       justify-content: space-between;
@@ -179,6 +179,7 @@ const Form = styled.div`
     border: 1px solid transparent;
     border-radius: 8px;
     padding: 5px;
+    min-width: 200px;
   }
   & .input-logged {
     margin: 100px;
@@ -194,28 +195,23 @@ const Form = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    //border: 1px dotted seagreen;
     align-items: center;
   }
 
   & .input-wrapper {
     margin: 5vh 10vw;
     width: 60%;
-    height: 60%;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
   }
 
-   //& .switcher{
-   //  width: 100%;
-   //  height: 20%;
-   //  display: flex;
-   //  padding: 30px;
-   //  justify-content: space-evenly;
-   //  align-items: center;
-   //}
+   & .switcher{
+     width: 80vw; !important;
+     height: 20vh;
+   }
 
   @media (max-width: 1024px) {
     display: flex;
@@ -228,14 +224,15 @@ const Form = styled.div`
     & .input-wrapper {
       padding: 0;
       margin: 0;
+      width: 90%;
       height: 80%;
-      width: 100%;
+      flex: 4;
     }
 
     & .switcher {
-      height: 20%;
-      width: 100%;
       display: flex;
+      width: 90%;
+      flex: 1;
       justify-content: space-around;
       align-items: center;
     }
