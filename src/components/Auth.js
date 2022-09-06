@@ -122,7 +122,7 @@ import {useNavigate } from "react-router-dom";
                                 </div>
                             </div>
                         }
-                        <div className="switcher">
+                        <div className="switcher" style={{width: "83.333%"}}>
                             <Complete type="submit" onClick={logged ? signupHandler : loginHandler}>{logged ? <h2>Create My Account</h2> : <h2>Log In</h2>}</Complete>
                             <IntentButton onClick={()=> setLogged(prevState => !prevState)}>{logged ? <h2>I have An Account</h2> : <h2>New Account</h2>}</IntentButton>
                         </div>
@@ -153,6 +153,9 @@ const Complete = styled.button`
   &:hover{
     transform: scale(1.1);
   }
+  @media (max-width: 1024px){
+    scale: 0.8;
+  }
   transition: all 0.5s ease-in;
 `
 
@@ -174,9 +177,10 @@ const Form = styled.div`
     border: 1px solid transparent;
     border-radius: 8px;
     padding: 5px;
+    min-width: 250px;
   }
   & .input-logged {
-    margin: 100px;
+    //margin: 100px;
     width: 60%;
     height: 60%;
     display: flex;
@@ -194,7 +198,7 @@ const Form = styled.div`
   }
 
   & .input-wrapper {
-    margin: 5vh 10vw;
+    //margin: 5vh 10vw;
     width: 60%;
     height: 60%;
     display: flex;
@@ -242,7 +246,6 @@ const Form = styled.div`
   @media (max-width: 500px) {
     &  input {
       width: 45vw;
-      scale: 0.8;
     }
 
   }
@@ -259,6 +262,9 @@ const IntentButton = styled.button`
     transform: scale(1.1);
   }
   transition: all 0.5s ease-in;
+  @media (max-width: 1024px){
+    scale: 0.8;
+  }
 `
 
 const Card = styled.div`
