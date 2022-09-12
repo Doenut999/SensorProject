@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import {Link} from "react-router-dom";
 import {motion} from "framer-motion";
-import Heather from "../components/Heather";
 import Footer from "../components/Footer";
 
 const AboutPage = () => {
@@ -11,18 +10,6 @@ const AboutPage = () => {
             <AboutNav>
                 Sensor Project
             </AboutNav>
-            <HeadSection>
-                <div style={{minWidth: 300}}>
-                    <Logo as={motion.h1} initial={{y: 200, opacity: 0}} animate={{y:0, opacity: 1}} transition={{type: "spring", stiffness: 50}}>Automobile Sensor Project</Logo>
-                    <motion.span  initial={{y: 200, opacity: 0}} animate={{y:0, opacity: 1}} transition={{type: "spring", stiffness: 50, delay: 0.3}}>Create An Account to see our work</motion.span>
-                    <Link to="auth"><Create>Create Account</Create></Link>
-                </div>
-                <motion.div className="right"
-                            initial={{x: "200vw"}} animate={{x:0}} transition={{duration: 1.9, delay: 0.2, type: "spring", stiffness: 40}}>
-                    <Heather  />
-                </motion.div>
-
-            </HeadSection>
             <InfoSection>
                 <Outline>Outline</Outline>
                 <Sensors>

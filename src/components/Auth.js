@@ -74,7 +74,6 @@ import {useNavigate } from "react-router-dom";
                 })
             navigate("/list", { replace: true})
             console.log("We are ready to log in");
-
         }
     }
     //

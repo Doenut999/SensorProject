@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import {motion} from "framer-motion";
 import {Link} from "react-router-dom";
+import "../PlayBtn.svg"
 
 const SensorList = () => {
     const initial = {
@@ -20,6 +21,7 @@ const SensorList = () => {
                 <Info>
                     <img src={"https://tester-101.s3.amazonaws.com/assets/FPS.jpg"} alt="fuel pressure sensor"/>
                     <span>Fuel Pressure Sensor</span>
+                    <Play>Click to Go To Video</Play>
                 </Info>
                 <Details className="sensor-info">
                     The fuel tank pressure sensor is part of the fuel pump assembly and is mounted on top of the tank or
@@ -183,13 +185,10 @@ const SensorList = () => {
                     The Intake Air Temperature sensor (IAT) monitors the temperature of the air entering the engine
                 </Details>
             </Sensor>
-
-        </>
-    )
+        </>    )
 }
 
 const Sensor = styled.div`
-
   width: 70vw;
   height: 70vh;
   min-height: 350px;
@@ -215,10 +214,16 @@ const Sensor = styled.div`
     & img {
       width: 100px;
       height: 100px;
-      margin: 5vh 5vw;
+      margin: 5vh 15vw;
 
     }
   }
+`
+
+const Play = styled.h3`
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 `
 
 const Details = styled.div`
